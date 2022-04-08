@@ -9,5 +9,6 @@
 * 7. import getAuth from firebase/auth and create auth = getAuth(app)
 * 8. turn on google authentication ( firebase > authentication > enable google sing in)
 * 9. Create google provider
-* 10. 
+* 10. use signInWithPopup and pass auth and provider
+* 11. handle .then(if successful) and catch error ( if error )
 */
