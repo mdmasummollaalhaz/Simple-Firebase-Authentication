@@ -35,14 +35,15 @@ function App() {
     <div className="App">
       
       {
-      user.email ? <button onClick={handleSignOut}>Sign Out</button>
+      user.email ? <button className="btn" onClick={handleSignOut}>Sign Out</button>
       :
-      <button onClick={handleGoogleSingIn}>Google Sign In</button>
+      <button className="btn" onClick={handleGoogleSingIn}>Google Sign In</button>
       }
 
       <h2>Name: {user.displayName}</h2>
       <p>I know your email: {user.email}</p>
-      <img src={user.photoURL} alt="" />
+      <p>Provider ID: {user.providerId}</p>
+      <img className='userImg' src={user.photoURL} alt="" />
     </div>
   );
 }
